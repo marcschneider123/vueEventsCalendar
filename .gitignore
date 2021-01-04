@@ -1,0 +1,36 @@
+Thumbs.db
+desktop.ini
+.DS_Store
+
+
+###
+# PHP Storm
+###
+
+.idea
+.phpstorm.meta.php
+_ide_helper.php
+
+
+###
+# Laravel
+###
+/vendor/
+node_modules/
+/stats/
+.sass-cache
+npm-debug.log
+yarn-error.log
+
+
+###
+# Jigsaw
+###
+.env.*.php
+.env.php
+.env
+/build_local/
+/build_production/
+/assets/build/
+source/assets/build
+source/assets/fonts/vendor/*

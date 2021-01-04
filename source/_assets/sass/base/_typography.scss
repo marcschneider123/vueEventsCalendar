@@ -1,0 +1,112 @@
+body {
+	font-family: $font-family-base;
+	color: $text-color;
+	font-size: $font-size;
+}
+
+@include headings {
+	color: $text-color-heading;
+	font-family: $font-family-base;
+}
+
+//li, p, h5, a, td, th {
+//	color: $text-color;
+//	font-family: $font-light, Helvetica, sans-serif;
+//	font-size: 17px;
+//}
+
+h1 {
+	font-size: $font-size-h1;
+	font-weight: 300;
+	//font-family: $font-light, Helvetica, sans-serif;
+	//text-transform: uppercase;
+	@include media-breakpoint-down('sm'){
+		font-size: $font-size-h1-mobile;
+	}
+}
+h2, .title-h2 {
+	font-size: $font-size-h2;
+	@include media-breakpoint-down('sm'){
+		font-size: $font-size-h2-mobile;
+	}
+}
+
+h3, .title-h3 {
+	font-size: $font-size-h3;
+	padding-bottom: 2rem;
+
+	@include media-breakpoint-down('sm'){
+		font-size: $font-size-h3-mobile;
+	}
+}
+
+a {
+	color: $text-color;
+	text-decoration: underline;
+	&:hover{
+		color: $text-color-hover;
+	}
+}
+
+.social-sharing span:hover {
+	color: $text-color-hover;
+	text-decoration-color: $text-color-hover;
+
+}
+
+/*
+	Lists
+ */
+ul {
+	padding: 0;
+	margin-left: 20px;
+
+	li{
+		//margin-bottom: 0.5rem;
+	}
+}
+
+ul.list-separator {
+	li{
+		margin-bottom: 0.5rem;
+	}
+
+	li + li {
+		&:before {
+			content: '|';
+			margin-right: 0.75rem;
+		}
+	}
+}
+
+//font-awesome list items
+.fa-ul{
+	margin-left: 2.2rem;
+	li{
+		padding-bottom: 0.5rem;
+	}
+	.fa-li{
+		padding-right: 1rem;
+		.fa-check{
+			color: $primary;
+		}
+	}
+}
+
+.svg-inline--fa {
+	margin-right: .5rem;
+}
+
+.text-info {
+	color: $text-color-hover!important;
+	&:hover{
+		color: $text-color-hover!important;
+	}
+}
+
+.text-link {
+	color: $text-color-hover!important;
+	&:hover{
+		color: $text-color-hover!important;
+	}
+}

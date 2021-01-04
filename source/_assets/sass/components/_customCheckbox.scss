@@ -1,0 +1,61 @@
+.custom-checkbox{
+	height:auto!important;
+	width:auto!important;
+
+	.overlay {
+
+	}
+
+	.overlay-hover {
+
+	}
+
+	.title {
+		border: 2px solid $white;
+		color: $text-color-light;
+		padding: .25rem;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 1.5rem;
+
+		span {
+			text-transform: uppercase;
+		}
+	}
+
+	input + .label{
+
+		&:hover {
+			color: $text-color-light;
+		}
+
+		&:after {
+			content:'';
+			background: url($input-unchecked);
+			display: inline-block;
+			width: 25px;
+			height: 25px;
+			position: absolute;
+			bottom: 5px;
+			right: 5px;
+		}
+	}
+
+	/* When the checkbox is checked, add a blue border */
+	input:checked ~ .label
+	//, .label:hover
+	{
+		&:after {
+			background: url($input-checked);
+		}
+
+		.title{
+			border-color: $red;
+		}
+	}
+
+	/* When the checkbox is checked and hovered, remove blue border */
+	//input:checked ~ .label:hover {
+	//	border: $input-border-size solid $input-border-color;
+	//}
+}

@@ -1,0 +1,45 @@
+.vs-table {
+	// 1st column width fix
+	thead th {
+		width: auto!important;
+	}
+
+	.vs-table--tr:not(.active) {
+		color: $text-color-medium;
+	}
+
+	.expand-event {
+		text-align: left;
+	}
+}
+
+.table {
+	tr:focus {
+		outline:none;
+	}
+
+	th, td {
+		border-top-color: $table-border-color;
+	}
+}
+
+.table-dark {
+	background-color: inherit;
+	color: $text-color-medium;
+
+	td {
+		background-color: inherit;
+		border-color: $table-border-color;
+	}
+
+	.svg-inline--fa {
+		color: $text-color-medium;
+	}
+}
+
+.b-table-details {
+
+	td {
+		border-top-color: transparent;
+	}
+}

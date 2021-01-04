@@ -1,0 +1,30 @@
+.btn {
+	border-radius: 0;
+	font-size: $btn-fontsize;
+	//padding: 0.75rem 3.3rem;
+
+	@include media-breakpoint-down('sm') {
+		font-size: $btn-fontsize-mobile;
+		//padding: 0.75rem 1rem;
+	}
+}
+
+.btn-primary {
+	@include btn-style($btn-primary-color, $btn-primary-bg, $btn-primary-border, $btn-primary-hover-bg, $btn-primary-hover-border, $btn-primary-hover-color);
+}
+
+.btn-secondary {
+	@include btn-style($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border, $btn-secondary-hover-bg, $btn-secondary-hover-border, $btn-secondary-hover-color);
+}
+
+.btn-link {
+	color: $text-color;
+
+	&:hover {
+		color: $text-color-hover;
+	}
+}
+
+[role=button] {
+	cursor: pointer;
+}

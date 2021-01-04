@@ -1,0 +1,139 @@
+$navbar-height: 65px;
+$navbar-height-expanded: 103px;
+
+//== Fonts
+//
+//## Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+$text-color: $black;
+$text-color-hover: $red;
+$text-color-heading: $text-color;
+$text-color-light: $white;
+$text-color-medium: $grey-medium;
+$text-color-dark: $black;
+
+$font-family-base: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
+$font-size: 18px;
+$font-size-h1: 36px;
+$font-size-h1-mobile: 24px;
+//$font-weight-h1: 700;
+$line-height: 1.5;
+$line-height-secondary: 1.2;
+
+$font-size-h2: 30px;
+$font-size-h2-mobile: 22px;
+$font-size-h3: 24px;
+$font-size-h3-mobile: 20px;
+
+//Transition duration & scale factor
+$transD: 0.5s;
+$transD_long: 1s;
+$scaleFactor: 1.05;
+
+
+// Reassign color vars to semantic color scheme
+$primary:         	  		$red;
+$secondary:         	  	$blue;
+//$brand-success:            	  	$green;
+//$brand-info:               	 	$blue-medium;
+//$brand-warning:           	 	$orange;
+$brand-danger: 					$red;
+//$brand-inverse:         	    $gray-dark;
+
+
+//== Container
+//
+//## div-container settings
+//$container-border-size: 3px;
+//$container-border-primary-color: $gray-dark;
+//$container-border-secondary-color: $white;
+//$container-border-radius: 0px;
+$container-bg-light: $white;
+$container-bg-medium: $grey-light;
+$container-bg-dark: $grey-dark;
+$container-padding: 8vh;
+$container-padding-mobile: 1vh;
+
+
+// Alerts
+//$alert-border-radius:  		    2px;
+//$alert-border-width:         	2px;
+//$alert-success-color: 			$brand-success;
+
+// Badge
+//$badge-default-bg:  		    $gray-medium;
+//$badge-default-color:  		    $text-color-primary;
+//
+//$badge-primary-bg:  		    $blue-medium;
+//
+//$badge-warning-bg:  		    $orange;
+//
+//$badge-danger-bg:  		    	$brand-danger;
+
+
+// Buttons
+$btn-border-radius:  		    0;
+//$btn-border-width:         	    2px;
+
+$btn-fontsize:					18px;
+$btn-fontsize-mobile:			14px;
+
+$btn-primary-color:        		$text-color-light;
+$btn-primary-bg:              	$primary;
+$btn-primary-border:        	$primary;
+$btn-primary-hover-bg: 			darken($primary,3%);
+$btn-primary-hover-border:		darken($primary,3%);
+$btn-primary-hover-color: 		$text-color-light;
+
+$btn-secondary-color:           $text-color;
+$btn-secondary-bg:              $white;
+$btn-secondary-border:          $white;
+$btn-secondary-hover-bg:        $grey-light;
+$btn-secondary-hover-border:    $grey-light;
+$btn-secondary-hover-color:     $text-color;
+
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$border-width:					3px;
+$border-color:					$black;
+$border-color-light:            $grey-light;
+//== Cards
+//
+//## cards settings
+//$card-list-border-size: 1px;
+//$card-list-border-color: $black;
+//$card-list-border-radius: 0px;
+
+
+//== Forms
+//
+//## input, textarea settings
+$input-bg: $container-bg-medium;
+$input-bg-active: $blue-dark;
+$input-bg-active-hover: $blue-light;
+$input-border-radius: 0;
+$input-border-size: 3px;
+$input-border-width: 3px;
+$input-border-color: $grey-light;
+$input-border-color-focus: $grey-dark;
+$input-border-color-checked: $blue-dark;
+
+$input-btn-padding-y: 1.5rem;
+$input-btn-padding-x: 1.5rem;
+$input-padding-y: $input-btn-padding-y;
+$input-padding-x: $input-btn-padding-x;
+$input-height: calc(#{$input-padding-y} * 2 + #{$input-border-width});
+
+$input-checked: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAuElEQVRIiWN4wCzo+YhN+NljNuH/1MaP2ISfPWAW9GSglQXIFjHAOLQAMLNHLRm1hDzw99md/y8CLP7/fXaHNpb8fXbn/xMtxf9vi0KxylNsCSELKLaEGAsosoRYC4iy5EWAxf8f+1aQbQFRlnxZ2Pr/EZc43CJSLSDKEmSLvixsJdkCoi1BtohUC0iy5P////9/ndlFsgUkW0IuGLVkEFtCh9bKc4YHzIJej9iEn9PGAqEnD5gFvQDWvh8NwuWEEwAAAABJRU5ErkJggg==';
+$input-unchecked: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAoUlEQVRIie3WIQ6DQBCF4dW9QDW24QrYJuB7gR6BO/QKeBwOj+AC7QVqG7IIAgZCCGn4cSQNmG06omRf8syM+MSYUYAPaGSiAV8JAgukhAEALCKHvJ93hjyRRbr4RnU9W2SvyNQ2aM9dtTg5vA7Hzd34yMwQgCFP6NPoo3V4QXvuat6nEVPbmCNb+b+bWOQnyLexiDEi/a2UCgiAUggogGAGNcx/c8bVIxIAAAAASUVORK5CYII=';
+
+
+//== Tables
+//
+//## tables settings
+//$table-border-size: 1px;
+$table-border-color: $grey-medium;

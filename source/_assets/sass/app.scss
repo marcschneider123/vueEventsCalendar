@@ -1,0 +1,12 @@
+/*
+ * vendor files
+ * @note ~ denotes node_modules directory by default.
+ */
+@import "~bootstrap/scss/bootstrap";
+
+@import "mixins/module";
+@import "utils/module";
+@import "components/module";
+@import "base/typography";
+
+@import "layout/module";

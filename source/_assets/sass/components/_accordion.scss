@@ -1,0 +1,54 @@
+.accordion {
+	[data-toggle='collapse'] {
+		cursor: pointer;
+	}
+
+	.card {
+		background-color: $white;
+		border: 0;
+		color: $text-color;
+		
+		.card-header {
+			background-color: transparent;
+			border-top: 30px solid $border-color;
+			border-bottom: none;
+			padding: 30px;
+
+			.btn-link{
+				padding-right: 0;
+				padding-left: 1rem;
+			}
+		} //.card-header
+		
+		.card-body {
+			color: $text-color;
+			padding: 30px;
+			padding-top: 0;
+		} //.card-body
+	} //.card
+} //.accordion
+
+/**
+	mobile optimizations
+ */
+@include media-breakpoint-down('sm') {
+	.accordion {
+		.fa-stack {
+			font-size: 1.3em;
+		}
+		.title {
+			padding-left: 0.5rem;
+		}
+	}
+
+	.collapse-control {
+		.fa-stack {
+			font-size: 0.8rem;
+		}
+	}
+}
+
+.collapsed > .opened,
+:not(.collapsed) > .closed {
+	display: none;
+}

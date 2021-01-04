@@ -1,0 +1,15 @@
+#mainNav {
+	background-color: transparent;
+
+	.container {
+		display: block;
+		text-align: center;
+
+		.navbar-brand {
+			color: transparent;
+			font-size: 0;
+			margin: 0;
+			padding: 0;
+		}
+	}
+}

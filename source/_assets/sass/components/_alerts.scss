@@ -1,0 +1,12 @@
+.alert {
+	border-radius: 0;
+	&.alert-info {
+		background-color: $container-bg-light;
+		border-color: $text-color;
+		color: $text-color;
+	}
+	&.alert-warning {
+		//background-color: $container-bg-light;
+		//color: $text-color;
+	}
+}

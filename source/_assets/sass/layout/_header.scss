@@ -1,0 +1,95 @@
+// Styling for the masthead
+header.masthead {
+
+	min-height: 820px;
+	//min-height: 85vh;
+	height: 85vh;
+	position: relative;
+	width: 100%;
+
+	@include media-breakpoint-down('sm'){
+		min-height: 640px;
+	}
+
+	.title{
+		padding-top: $navbar-height-expanded;
+	}
+
+	//@include media-breakpoint-down('sm'){
+	//	padding-top: 58px;
+	//}
+
+	.arrow_down {
+		margin-top: 2rem;
+		text-align: center;
+		a {
+			//color: $text-color-light;
+		}
+	}
+
+	.cta-image {
+		position: absolute;
+
+		&.center-left{
+			top: -260px;
+			top: -26vh;
+			left: 0px;
+
+			@include media-breakpoint-up(lg){
+				left: -300px;
+			}
+			@include media-breakpoint-up(xl){
+				left: -320px;
+			}
+		}
+		&.top-right{
+
+			top: -190px;
+			top: -19vh;
+			left: 34%;
+
+			@include media-breakpoint-up(md){
+				top: -200px;
+				top: -20vh;
+				left: 34%;
+			}
+			@include media-breakpoint-up(lg){
+				top: -530px;
+				top: -54vh;
+				left: auto;
+				right: -210px;
+			}
+			@include media-breakpoint-up(xl){
+				right: -260px;
+			}
+		}
+
+		img{
+			@include media-breakpoint-down(sm){
+				width: 80%;
+			}
+		}
+	}
+
+	.cta-circle-primary{
+		background-color: $primary;
+		border-radius: 50%;
+		color: $text-color;
+		height: 150px;
+		width: 150px;
+		padding: 1rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		color: $text-color;
+		text-transform: uppercase;
+		font-size: 0.9rem;
+		transform: rotate(-13deg);
+
+		&:hover{
+			background: linear-gradient(to bottom right, $primary, lighten($primary,30%));
+			text-decoration: none;
+		}
+	}
+}

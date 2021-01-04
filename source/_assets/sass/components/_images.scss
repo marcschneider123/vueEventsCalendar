@@ -1,0 +1,33 @@
+.img-bottom{
+	//margin-bottom: -$container-padding;
+
+	@include media-breakpoint-up('md'){
+		position: absolute;
+		bottom: 0;
+
+		&.img-below-bottom{
+			bottom: -5vh;
+		}
+	}
+}
+
+.bg-image {
+	.bg-image-left {
+		position:relative;
+		z-index: 5;
+		left:50%;
+		bottom: -5vh;
+
+		@include media-breakpoint-only(lg) {
+			left:10%;
+		}
+	}
+	.bg-image-right {
+		position:relative;
+		z-index: 5;
+		bottom: -5vh;
+	}
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
+}
